@@ -5,6 +5,8 @@
 
 # My Age in Books
 
+An ongoing project to read the same amount of books as my current age, in the understanding that as I get older, I'll have more time to read. I'm currently 40.
+
 ## 40
 
 ### Currently Reading
