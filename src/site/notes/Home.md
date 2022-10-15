@@ -3,4 +3,4 @@
 ---
 
 
-Dit is mijn homepagina.
+Dit is mijn homepagina. En hier link ik naar een [[Andere pagina|Andere pagina]].
