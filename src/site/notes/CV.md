@@ -68,7 +68,7 @@ Nexus Institute | 2017 - 2023
 - Cloud platforms: AWS, Digital Ocean, Hetzner
 - DevOps tools & Platforms: Docker, Kubernetes, Terraform, GitLab, GitHub, 
 - Database Systems: MySQL, PostgreSQL
-- Soft skills: Leadership, Communication, Teaching, Problem-solving, Team collaborationj
+- Soft skills: Leadership, Communication, Teaching, Problem-solving, Team collaboration
 
 
 **Languages**
