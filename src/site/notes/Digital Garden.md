@@ -7,5 +7,5 @@ This is my digital garden. It's my playground to experiment with new things. It'
 
 # Projects
 
-- [[My Age in Books|My Age in Books]]
-- [[Things I Learned|Things I Learned]]
+- [[My Age in Books\|My Age in Books]]
+- [[Things I Learned\|Things I Learned]]
