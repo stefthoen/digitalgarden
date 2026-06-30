@@ -2,33 +2,47 @@
 {"dg-publish":true,"permalink":"/project-phoenix/"}
 ---
 
-## Inleiding: De Volgende Generatie Softwareontwikkeling
+# Project Phoenix
 
-Stel je een wereld voorbij GitHub voor. Een wereld waar je niet vastzit aan het ecosysteem van één bedrijf, en waar AI niet zomaar een slimme typ-assistent is, maar een proactief, volwaardig lid van je dev team. Dit document schetst de visie voor een nieuw soort ontwikkelplatform, gebouwd op twee revolutionaire principes: **Federatie** en een **AI-Native architectuur**.
+## Inleiding
 
-Waarom is dit een goed idee?
+GitHub heeft net aangekondigd dat ze 12-18 maanden geen nieuwe features gaan bouwen. Ze zijn volledig gefocust op hun migratie naar Azure omdat hun infrastructuur het niet meer aankan. GitLab is ondertussen een log alles-in-één platform geworden dat probeert elk probleem op te lossen maar er geen echt goed oplost.
 
-1.  **Het doorbreekt de "gouden kooi" van GitHub/GitLab.** In plaats van één gecentraliseerd platform (zelfs als je het zelf host), creëren we een open netwerk van samenwerkende servers (federatie). Dit geeft individuen en bedrijven volledige controle over hun eigen data (data soevereiniteit) zonder het vermogen tot samenwerking te verliezen. Denk aan hoe e-mail werkt: een Gmail-gebruiker kan naadloos communiceren met iemand die zijn eigen server host.
-2.  **Het herdefinieert de rol van AI.** In plaats van AI als een add-on (AI-assisted), bouwen we het platform vanaf de grond op rondom AI (AI-native). De kern van het platform is een "App Store voor AI Agents": gespecialiseerde, autonome experts die je kunt installeren in je project. Je wijst geen taken meer toe aan alleen mensen, maar ook aan AI-teamleden die code schrijven, reviews uitvoeren, processen bewaken en je coachen. De rol van de ontwikkelaar verschuift van *schrijver* naar *architect en dirigent* van een gemengd team van mensen en AI.
+Dit is ons moment.
 
-Dit is geen betere GitHub-kloon; dit is een fundamenteel nieuwe manier van software bouwen.
+**Het probleem:** Ontwikkelplatforms zijn gecentraliseerde monopolies waar je vendor lock-in hebt, geen controle over je data, en waar AI slechts een add-on is - een slim autocomplete-feature in plaats van een fundamenteel onderdeel van hoe je software bouwt.
+
+**De oplossing:** Een platform gebouwd op twee principes:
+
+1. **Federatie** - Net zoals e-mail werkt: je kan je eigen server draaien (`git.jouwbedrijf.nl`) maar nog steeds naadloos samenwerken met projecten op andere servers. Volledige controle over je data, zonder het verlies van samenwerking. Geen vendor lock-in.
+
+2. **AI-Native** - In plaats van AI achteraf toevoegen, bouwen we het platform eromheen. Een "App Store voor AI Agents": gespecialiseerde experts die je installeert in je project. Een agent die automatisch tech debt tracked, een die code reviews doet, een die je coacht wanneer tickets vastlopen. AI is niet een feature, maar een teamlid.
+
+**Waarom dit werkt:** GitHub en GitLab plakken AI bovenop een bestaande architectuur. Wij bouwen vanaf nul met AI als kernprincipe. Zij blijven gecentraliseerde platforms. Wij geven je vrijheid via federatie. Het verschil tussen een elektrische motor in een oude auto proppen versus een Tesla ontwerpen.
 
 ---
 
-## Hoofdstuk 1: De Kernfilosofie
+## Hoofdstuk 1: Waarom Nu?
 
-### GitLab is een Zwitsers Zakmes, Wij bouwen een Formule 1 Pitcrew
+### De GitHub Situatie
 
-*   **GitLab/GitHub:** Een alles-in-één platform met elke denkbare tool. Handig, maar log en niet altijd de beste tool voor elke specifieke taak.
-*   **Ons Platform:** Een team van hyper-gespecialiseerde experts (de AI-agents) die perfect samenwerken met maar één doel: jouw code en proces zo snel en efficiënt mogelijk maken.
+In oktober 2025 kondigde GitHub aan dat ze feature development pauzeren voor 12-18 maanden om te migreren naar Azure. Intern noemt CTO Vladimir Fedorov dit "existentieel" - hun datacenters kunnen de groei van AI-workloads niet meer aan. CEO Thomas Dohmke vertrok in augustus 2024, en GitHub is nu volledig opgeslokt door Microsoft.
 
-### Federatie: De Universiteitsbibliotheek Analogie
+Dit toont aan: gecentraliseerde platforms kunnen niet schalen voor de AI-era zonder nog afhankelijker te worden van één grote cloud provider. En hun klanten betalen door, zonder nieuwe features te krijgen.
 
-Federatie lost de spanning op tussen "controle over mijn data" en "samenwerken met anderen".
+*Bron: [The New Stack](https://thenewstack.io/github-will-prioritize-migrating-to-azure-over-feature-development/)*
 
-*   Stel je voor dat jouw bedrijf zijn eigen, private bibliotheek heeft (`git.jouwbedrijf.nl`).
-*   Als je wilt samenwerken met een partner, hoef je niet naar hun bibliotheek. Je vraagt vanuit je *eigen* bibliotheek een boek aan.
-*   Jouw server (de bibliothecaris) regelt de communicatie op de achtergrond. Het project van de partner verschijnt naadloos in jouw dashboard, terwijl de data veilig bij de partner blijft. Je hebt controle én kunt samenwerken.
+### Onze Aanpak: Twee Kernprincipes
+
+**1. Federatie = Vrijheid zonder isolatie**
+
+Net zoals e-mail: jij draait `git.jouwbedrijf.nl`, ik draai `git.mijnbedrijf.nl`, maar we kunnen naadloos samenwerken. Jouw data blijft bij jou, maar je bent niet geïsoleerd. Geen vendor lock-in, geen gedwongen migraties, geen "we pauzeren features voor een jaar".
+
+**2. AI-Native = Agents als teamleden**
+
+Niet "AI-autocomplete als feature", maar een platform ontworpen rond AI vanaf dag één. Gespecialiseerde agents die je installeert: één tracked tech debt, één doet security scans, één coacht teamleden bij vertraagde tickets. Ze draaien autonoom, hebben context van je hele project, en zijn uitwisselbaar via een marketplace.
+
+GitHub plakt Copilot op een 15 jaar oud platform. Wij bouwen het platform rond de agents heen.
 
 ---
 
@@ -36,7 +50,7 @@ Federatie lost de spanning op tussen "controle over mijn data" en "samenwerken m
 
 Dit is de "App Store" voor je project, waar je gespecialiseerde AI-experts installeert. Een agent is een pakket met kennis en gereedschappen (in een veilige WASM-module).
 
-### Voorbeelden van Agents:
+### Voorbeelden van Agents
 
 #### Proces & Management
 *   **De Scrum Coach:** Coacht teamleden privé als tickets vertragen en biedt hulp aan.
